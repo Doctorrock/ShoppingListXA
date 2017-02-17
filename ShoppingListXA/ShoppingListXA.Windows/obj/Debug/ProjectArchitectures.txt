@@ -1,0 +1,2 @@
+D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA.Windows\ShoppingListXA.Windows.csproj;neutral
+D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA\ShoppingListXA.csproj;neutral

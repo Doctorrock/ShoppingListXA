@@ -3,9 +3,25 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:ShoppingListXA"
              x:Class="ShoppingListXA.MainPage">
-
-  <Label Text="Welcome to Xamarin Forms!"
-           VerticalOptions="Center"
-           HorizontalOptions="Center" />
+  <StackLayout>
+  <ListView x:Name="listView">
+    <ListView.ItemTemplate>
+      <DataTemplate>
+        <ViewCell>
+          <Label Text="{Binding Text}"/>
+        </ViewCell>
+      </DataTemplate>
+    </ListView.ItemTemplate>
+  </ListView>
+  <Button Text="Dodaj produkt" Command="{Binding AddProduct}"/> 
+  </StackLayout>
+  
+  
+  <!--<StackLayout>
+    <Label Text="Testing View model"/>
+    <Label Text=" {Binding Text}"/>
+    <Label Text=" {Binding IsChecked}"/>
+    <Button Text="Zaznacz" Command="{Binding CheckProduct}"/>    
+  </StackLayout>-->
 
 </ContentPage>

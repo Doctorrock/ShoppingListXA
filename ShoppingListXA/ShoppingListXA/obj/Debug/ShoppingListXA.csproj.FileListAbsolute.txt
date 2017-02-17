@@ -1,0 +1,14 @@
+D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA\bin\Debug\ShoppingListXA.dll
+D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA\bin\Debug\ShoppingListXA.pdb
+D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA\bin\Debug\Xamarin.Forms.Core.dll
+D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA\bin\Debug\Xamarin.Forms.Platform.dll
+D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA\bin\Debug\Xamarin.Forms.Xaml.dll
+D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA\bin\Debug\Xamarin.Forms.Core.xml
+D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA\bin\Debug\Xamarin.Forms.Xaml.xml
+D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA\obj\Debug\ShoppingListXA.MainPage.xaml.g.cs
+D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA\obj\Debug\ShoppingListXA.App.xaml.g.cs
+D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA\obj\Debug\ShoppingListXA.dll
+D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA\obj\Debug\ShoppingListXA.pdb
+D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA\obj\Debug\ShoppingListXA.csprojResolveAssemblyReference.cache
+D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA\obj\Debug\ShoppingListXA.dll.mdb
+D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA\bin\Debug\ShoppingListXA.dll.mdb
