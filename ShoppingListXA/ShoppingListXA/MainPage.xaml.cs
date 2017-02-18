@@ -8,7 +8,7 @@ namespace ShoppingListXA
         public MainPage()
         {
             InitializeComponent();
-            //NavigationPage.SetHasNavigationBar(this, false);
+            NavigationPage.SetHasNavigationBar(this, false);
             var listViewModel = new ListViewModel();
             this.BindingContext = listViewModel;
             this.listView.ItemsSource = listViewModel.Products;

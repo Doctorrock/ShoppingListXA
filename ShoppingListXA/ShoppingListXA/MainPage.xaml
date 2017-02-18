@@ -8,12 +8,17 @@
     <ListView.ItemTemplate>
       <DataTemplate>
         <ViewCell>
+          <StackLayout BackgroundColor="#eee"
+                        Orientation="Vertical">
           <Label Text="{Binding Text}"/>
+            <Image Source="check.png"/>
+          </StackLayout>
         </ViewCell>
       </DataTemplate>
     </ListView.ItemTemplate>
   </ListView>
   <Button Text="Dodaj produkt" Command="{Binding AddProduct}"/> 
+  <Button Text="Dodaj produkt z nowej storny" Command="{Binding AddPageCommand}"/> 
   </StackLayout>
   
   

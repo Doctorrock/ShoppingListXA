@@ -67,6 +67,9 @@
       <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA\images\check.png">
+      <PackagePath>ShoppingListXA\images\check.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA.WinPhone\bin\Debug\ShoppingListXA.WinPhone.xr.xml">
       <PackagePath>ShoppingListXA.WinPhone.xr.xml</PackagePath>
     </AppxPackagedFile>

@@ -622,3 +622,6 @@ namespace ShoppingListXA.WinPhone.ShoppingListXA_WinPhone_XamlTypeInfo
 }
 
 
+
+
+

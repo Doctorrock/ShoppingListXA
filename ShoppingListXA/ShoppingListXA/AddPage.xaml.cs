@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using ShoppingListXA.ViewModels;
 
 using Xamarin.Forms;
 
@@ -13,6 +9,8 @@ namespace ShoppingListXA
         public AddPage()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
+            BindingContext = new ProductViewModel();
         }
     }
 }

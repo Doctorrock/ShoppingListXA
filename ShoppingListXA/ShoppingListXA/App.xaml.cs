@@ -9,11 +9,12 @@ namespace ShoppingListXA
 {
     public partial class App : Application
     {
+        public static INavigation Navigation = null;
         public App()
         {
-            InitializeComponent();
-
-            MainPage = new ShoppingListXA.MainPage();
+            NavigationPage page = new NavigationPage(new MainPage());
+            App.Navigation = page.Navigation;
+            MainPage = page;
         }
 
         protected override void OnStart()

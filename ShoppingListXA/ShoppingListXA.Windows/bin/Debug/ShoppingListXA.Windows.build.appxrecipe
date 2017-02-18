@@ -59,6 +59,9 @@
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA\images\check.png">
+      <PackagePath>ShoppingListXA\images\check.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA.Windows\bin\Debug\ShoppingListXA.Windows.xr.xml">
       <PackagePath>ShoppingListXA.Windows.xr.xml</PackagePath>
     </AppxPackagedFile>
