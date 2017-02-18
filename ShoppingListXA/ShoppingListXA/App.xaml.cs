@@ -1,19 +1,31 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
+using ShoppingListXA.Interfaces;
 
 namespace ShoppingListXA
 {
     public partial class App : Application
     {
         public static INavigation Navigation = null;
+        static IAppDatabase database;
+        public static IAppDatabase Database
+        {
+            get
+            {
+                if (database == null)
+                {
+                    database = DependencyService.Get<IAppDatabase>();
+                }
+                return database;
+            }
+        }
+
         public App()
         {
             NavigationPage page = new NavigationPage(new MainPage());
             App.Navigation = page.Navigation;
+
+           
+
             MainPage = page;
         }
 

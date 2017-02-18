@@ -1,7 +1,7 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
-    <LocalAssembly PathName="d:\projects\shoppinglistxa\shoppinglistxa\shoppinglistxa.winphone\obj\debug\intermediatexaml\shoppinglistxa.winphone.exe" HashGuid="80e52a2f-70f1-b30b-5b1d-e59ac9e6f37c" />
-    <ReferenceAssembly PathName="d:\projects\shoppinglistxa\shoppinglistxa\shoppinglistxa\bin\debug\shoppinglistxa.dll" HashGuid="ac36e0c9-dd63-2bcb-3261-29374839a689" />
+    <LocalAssembly PathName="d:\projects\shoppinglistxa\shoppinglistxa\shoppinglistxa.winphone\obj\debug\intermediatexaml\shoppinglistxa.winphone.exe" HashGuid="3257298a-0a26-c9eb-2402-ef7402dae9d0" />
+    <ReferenceAssembly PathName="d:\projects\shoppinglistxa\shoppinglistxa\shoppinglistxa\bin\debug\shoppinglistxa.dll" HashGuid="741b7998-d06b-fae4-88bf-e7f391e170cc" />
     <ReferenceAssembly PathName="d:\projects\shoppinglistxa\packages\xamarin.forms.2.0.0.6482\lib\wpa81\xamarin.forms.core.dll" HashGuid="c8a30eb8-5ae8-352d-b94f-7c913a7557ba" />
     <ReferenceAssembly PathName="d:\projects\shoppinglistxa\packages\xamarin.forms.2.0.0.6482\lib\wpa81\xamarin.forms.platform.dll" HashGuid="d9389e38-8a39-bed5-406b-7a34fe4704ea" />
     <ReferenceAssembly PathName="d:\projects\shoppinglistxa\packages\xamarin.forms.2.0.0.6482\lib\wpa81\xamarin.forms.platform.winrt.dll" HashGuid="dbd728c2-e21b-4125-2be0-f7931b605baa" />

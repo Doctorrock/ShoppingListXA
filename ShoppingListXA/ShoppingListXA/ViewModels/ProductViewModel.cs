@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ShoppingListXA.Models;
+using System;
 using System.Windows.Input;
 using Xamarin.Forms;
 
@@ -8,7 +9,10 @@ namespace ShoppingListXA.ViewModels
     {
         private DateTime dateAdded;
         private string text;
-        private bool isChecked; 
+        private bool isChecked;
+        private int id;
+
+        public int ID => this.id;
 
         public ProductViewModel()
         {
@@ -23,6 +27,10 @@ namespace ShoppingListXA.ViewModels
             isChecked = true;
             this.text = name;
 
+        }
+        public ProductViewModel(int id):this()
+        {
+            this.id = id;
         }
 
         public string Text
@@ -49,6 +57,12 @@ namespace ShoppingListXA.ViewModels
                 if (isChecked != value)
                 {
                     isChecked = value;
+                    App.Database.SaveItem(new ProductModel
+                    {
+                        ID = this.ID,
+                        IsChecked = isChecked,
+                        Name = this.Text
+                    });
                     OnPropertyChanged();
                 }
             }

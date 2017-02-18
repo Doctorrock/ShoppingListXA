@@ -28,17 +28,17 @@
     <AppXManifest Include="D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA.Windows\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-02-17T23:25:05.366</Modified>
+      <Modified>2017-02-18T13:19:34.080</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA.Windows\bin\Debug\ShoppingListXA.Windows.exe">
       <PackagePath>ShoppingListXA.Windows.exe</PackagePath>
-      <Modified>2017-02-18T10:46:13.389</Modified>
+      <Modified>2017-02-18T17:39:12.067</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA\bin\Debug\ShoppingListXA.dll">
       <PackagePath>ShoppingListXA.dll</PackagePath>
-      <Modified>2017-02-18T10:46:10.675</Modified>
+      <Modified>2017-02-18T17:15:31.057</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\projects\ShoppingListXA\packages\Xamarin.Forms.2.0.0.6482\lib\win81\Xamarin.Forms.Core.dll">
       <PackagePath>Xamarin.Forms.Core.dll</PackagePath>
@@ -90,11 +90,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA.Windows\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2017-02-17T23:25:04.553</Modified>
+      <Modified>2017-02-18T13:19:33.697</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA.Windows\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2017-02-17T23:25:04.553</Modified>
+      <Modified>2017-02-18T13:19:33.697</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\projects\ShoppingListXA\packages\Xamarin.Forms.2.0.0.6482\lib\win81\Xamarin.Forms.Platform.WinRT\FormsTextBox.xbf">
       <PackagePath>Xamarin.Forms.Platform.WinRT\FormsTextBox.xbf</PackagePath>
@@ -126,7 +126,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA.Windows\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2017-02-17T23:25:04.867</Modified>
+      <Modified>2017-02-18T13:19:33.930</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

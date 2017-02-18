@@ -13,5 +13,6 @@ namespace ShoppingListXA
             this.BindingContext = listViewModel;
             this.listView.ItemsSource = listViewModel.Products;
         }
+
     }
 }
