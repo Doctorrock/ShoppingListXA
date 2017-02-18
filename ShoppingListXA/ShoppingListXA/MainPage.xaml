@@ -17,7 +17,6 @@
       </DataTemplate>
     </ListView.ItemTemplate>
   </ListView>
-  <Button Text="Dodaj produkt" Command="{Binding AddProduct}"/> 
-  <Button Text="Dodaj produkt z nowej storny" Command="{Binding AddPageCommand}"/>
+  <Button Text="Dodaj produkt" Command="{Binding AddPageCommand}"/>
   </StackLayout>
 </ContentPage>

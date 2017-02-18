@@ -11,5 +11,6 @@ D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA\obj\Debug\ShoppingListX
 D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA\obj\Debug\ShoppingListXA.pdb
 D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA\obj\Debug\ShoppingListXA.AddPage.xaml.g.cs
 D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA\obj\Debug\ShoppingListXA.ImagePage.xaml.g.cs
+D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA\obj\Debug\ShoppingListXA.csprojResolveAssemblyReference.cache
 D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA\obj\Debug\ShoppingListXA.dll.mdb
 D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA\bin\Debug\ShoppingListXA.dll.mdb

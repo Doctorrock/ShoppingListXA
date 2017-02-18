@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ShoppingListXA.AddPage">
   <StackLayout>
-  <Entry Text="{Binding Text}" Placeholder="Nazwa produktu"/>
-  <Button Text="Zapisz"/>
+  <Entry Text="{Binding ProductToAdd.Text}" Placeholder="Nazwa produktu"/>
+  <Button Text="Zapisz" Command="{Binding SaveProduct}"/>
+    <Button Text="Anuluj" Command="{Binding GetBack}"/>
   </StackLayout>
 </ContentPage>

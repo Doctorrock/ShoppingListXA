@@ -4,7 +4,7 @@ using Xamarin.Forms;
 
 namespace ShoppingListXA.ViewModels
 {
-    class ProductViewModel : BaseViewModel
+    public class ProductViewModel : BaseViewModel
     {
         private DateTime dateAdded;
         private string text;
@@ -18,14 +18,11 @@ namespace ShoppingListXA.ViewModels
             });
         }
 
-        public ProductViewModel(string name)
+        public ProductViewModel(string name):this()           
         {
             isChecked = true;
             this.text = name;
-            this.CheckProduct = new Command(() =>
-            {
-                this.IsChecked = !this.IsChecked;
-            });
+
         }
 
         public string Text

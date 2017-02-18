@@ -6,11 +6,13 @@ namespace ShoppingListXA
 {
     public partial class AddPage : ContentPage
     {
-        public AddPage()
+
+        public AddPage(ListViewModel list)
         {
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
-            BindingContext = new ProductViewModel();
+            list.ProductToAdd = new ProductViewModel();
+            BindingContext = list;
         }
     }
 }
