@@ -9,24 +9,15 @@
       <DataTemplate>
         <ViewCell>
           <StackLayout BackgroundColor="#eee"
-                        Orientation="Vertical">
-          <Label Text="{Binding Text}"/>
-            <Image Source="check.png"/>
+                        Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+          <Label Text="{Binding Text}" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand"/>
+            <Image Source="check.png" HorizontalOptions="End" IsVisible ="{Binding IsChecked}"/>
           </StackLayout>
         </ViewCell>
       </DataTemplate>
     </ListView.ItemTemplate>
   </ListView>
   <Button Text="Dodaj produkt" Command="{Binding AddProduct}"/> 
-  <Button Text="Dodaj produkt z nowej storny" Command="{Binding AddPageCommand}"/> 
+  <Button Text="Dodaj produkt z nowej storny" Command="{Binding AddPageCommand}"/>
   </StackLayout>
-  
-  
-  <!--<StackLayout>
-    <Label Text="Testing View model"/>
-    <Label Text=" {Binding Text}"/>
-    <Label Text=" {Binding IsChecked}"/>
-    <Button Text="Zaznacz" Command="{Binding CheckProduct}"/>    
-  </StackLayout>-->
-
 </ContentPage>

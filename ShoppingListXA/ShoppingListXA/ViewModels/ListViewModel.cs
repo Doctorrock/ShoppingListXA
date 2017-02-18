@@ -18,10 +18,11 @@ namespace ShoppingListXA.ViewModels
             });
 
             
-            this.AddPageCommand = new Command( () =>
+            this.AddPageCommand = new Command(() =>
             {
                  App.Navigation.PushAsync(new AddPage());
             });
+
 
         }
         public ObservableCollection<ProductViewModel> Products

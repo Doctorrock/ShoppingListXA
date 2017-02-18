@@ -624,6 +624,3 @@ namespace ShoppingListXA.Windows.ShoppingListXA_Windows_XamlTypeInfo
 }
 
 
-
-
-
