@@ -14,7 +14,6 @@ D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA.Droid\bin\Debug\Xamarin
 D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA.Droid\bin\Debug\Xamarin.Forms.Platform.dll
 D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA.Droid\bin\Debug\Xamarin.Forms.Xaml.dll
 D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA.Droid\bin\Debug\ShoppingListXA.pdb
-D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA.Droid\bin\Debug\ShoppingListXA.dll.mdb
 D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA.Droid\bin\Debug\Xamarin.Forms.Core.xml
 D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA.Droid\bin\Debug\Xamarin.Forms.Xaml.xml
 D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA.Droid\obj\Debug\ShoppingListXA.Droid.csprojResolveAssemblyReference.cache
@@ -30,10 +29,11 @@ D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA.Droid\obj\Debug\res\lay
 D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA.Droid\obj\Debug\res\values\styles.xml
 D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA.Droid\obj\Debug\R.cs.flag
 D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA.Droid\obj\Debug\uploadflags.txt
+D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA.Droid\bin\Debug\ShoppingListXA.Droid.dll.mdb
+D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA.Droid\bin\Debug\ShoppingListXA.dll.mdb
 D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA.Droid\bin\Debug\Java.Interop.dll.mdb
 D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA.Droid\bin\Debug\Mono.Android.dll.mdb
 D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA.Droid\bin\Debug\mscorlib.dll.mdb
-D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA.Droid\bin\Debug\ShoppingListXA.Droid.dll.mdb
 D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA.Droid\bin\Debug\System.ComponentModel.Composition.dll.mdb
 D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA.Droid\bin\Debug\System.Core.dll.mdb
 D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA.Droid\bin\Debug\System.dll.mdb
@@ -55,5 +55,9 @@ D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA.Droid\obj\Debug\android
 D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA.Droid\obj\Debug\android\assets\System.ServiceModel.Internals.dll.mdb
 D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA.Droid\obj\Debug\android\assets\System.Xml.dll.mdb
 D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA.Droid\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
+D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA.Droid\obj\Debug\res\drawable-hdpi\check.png
+D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA.Droid\obj\Debug\res\drawable-xhdpi\check.png
+D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA.Droid\obj\Debug\res\drawable-xxhdpi\check.png
+D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA.Droid\obj\Debug\res\drawable\check.png
 D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA.Droid\obj\Debug\ShoppingListXA.Droid.dll.mdb
 D:\projects\ShoppingListXA\ShoppingListXA\ShoppingListXA.Droid\bin\Debug\ShoppingListXA.Droid.dll.mdb
