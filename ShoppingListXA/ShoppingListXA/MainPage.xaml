@@ -10,8 +10,8 @@
         <ViewCell>
           <StackLayout BackgroundColor="#eee"
                         Orientation="Horizontal" HorizontalOptions="StartAndExpand">
-          <Label Text="{Binding Text}" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand"/>
-            <Image Source="check.png" HorizontalOptions="End" IsVisible ="{Binding IsChecked}"/>
+            <Button Text="{Binding Text}"  Command="{Binding CheckProduct}"  HorizontalOptions="StartAndExpand"/>
+            <Image Source="check.png" HorizontalOptions="End" IsVisible ="{Binding IsChecked}"/>   
           </StackLayout>
         </ViewCell>
       </DataTemplate>

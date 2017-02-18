@@ -12,13 +12,22 @@ namespace ShoppingListXA.ViewModels
 
         public ProductViewModel()
         {
-            isChecked = true;
-            this.text = "testowy produkt";
             this.CheckProduct = new Command(() =>
             {
                 this.IsChecked = !this.IsChecked;
             });
         }
+
+        public ProductViewModel(string name)
+        {
+            isChecked = true;
+            this.text = name;
+            this.CheckProduct = new Command(() =>
+            {
+                this.IsChecked = !this.IsChecked;
+            });
+        }
+
         public string Text
         {
             set
