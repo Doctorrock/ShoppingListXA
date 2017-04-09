@@ -9,12 +9,11 @@ namespace ShoppingListXA.ViewModels
 {
     public class ListViewModel : BaseViewModel
     {
-        ObservableCollection<ProductViewModel> products;
-       // IAppDatabase database;
+        // IAppDatabase database;
 
         public ListViewModel()
         {
-            products = new ObservableCollection<ProductViewModel>();
+            Products = new ObservableCollection<ProductViewModel>();
 
             DownloadProducts();
             AddProduct = new Command(() =>
@@ -32,13 +31,16 @@ namespace ShoppingListXA.ViewModels
             {
                 if(ProductToAdd != null)
                 {
-                    products.Add(ProductToAdd);
-                   ProductToAdd.ID = App.Database.SaveItem(new ProductModel
+                    
+                    var productModel = new ProductModel
                     {
-                        ID = ProductToAdd.ID,
+                        ID = ProductToAdd.Id,
                         Name = ProductToAdd.Text,
                         IsChecked = ProductToAdd.IsChecked
-                    });
+                    };
+                    
+                    ProductToAdd.Id = App.Database.SaveItem(productModel);
+                    Products.Add(ProductToAdd);
                 }
 
                 GetBack.Execute(new object());
@@ -50,13 +52,7 @@ namespace ShoppingListXA.ViewModels
             });
 
         }
-        public ObservableCollection<ProductViewModel> Products
-        {
-            get
-            {
-                return products;
-            }
-        }
+        public ObservableCollection<ProductViewModel> Products { get; }
 
         private void DownloadProducts()
         {
@@ -64,7 +60,7 @@ namespace ShoppingListXA.ViewModels
             var dbProducts =  App.Database.GetItems();
             foreach(var dbProduct in dbProducts)
             {
-                products.Add(new ProductViewModel(dbProduct.ID)
+                Products.Add(new ProductViewModel(dbProduct.ID)
                 {
                     
                     IsChecked = dbProduct.IsChecked,

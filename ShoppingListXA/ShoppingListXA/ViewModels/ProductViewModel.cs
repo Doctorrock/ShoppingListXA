@@ -7,11 +7,10 @@ namespace ShoppingListXA.ViewModels
 {
     public class ProductViewModel : BaseViewModel
     {
-        private DateTime dateAdded;
         private string text;
         private bool isChecked;
 
-        public int ID { get; set; }
+        public int Id { get; set; }
 
         public ProductViewModel()
         {
@@ -29,18 +28,16 @@ namespace ShoppingListXA.ViewModels
         }
         public ProductViewModel(int id):this()
         {
-            this.ID = id;
+            this.Id = id;
         }
 
         public string Text
         {
             set
             {
-                if(text != value)
-                {
-                    text = value;
-                    OnPropertyChanged();
-                }
+                if (text == value) return;
+                text = value;
+                OnPropertyChanged();
             }
 
             get
@@ -53,17 +50,15 @@ namespace ShoppingListXA.ViewModels
         {
             set
             {
-                if (isChecked != value)
+                if (isChecked == value) return;
+                isChecked = value;
+                App.Database.SaveItem(new ProductModel
                 {
-                    isChecked = value;
-                    App.Database.SaveItem(new ProductModel
-                    {
-                        ID = this.ID,
-                        IsChecked = isChecked,
-                        Name = this.Text
-                    });
-                    OnPropertyChanged();
-                }
+                    ID = this.Id,
+                    IsChecked = isChecked,
+                    Name = this.Text
+                });
+                OnPropertyChanged();
             }
 
             get

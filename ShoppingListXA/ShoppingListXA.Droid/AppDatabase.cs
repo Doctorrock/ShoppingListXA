@@ -5,7 +5,8 @@ using ShoppingListXA.Interfaces;
 using System;
 using ShoppingListXA.Droid;
 using System.IO;
-using Android.Util;
+using System.Linq;
+using Android.Database.Sqlite;
 
 [assembly: Xamarin.Forms.Dependency(typeof(AppDatabase))]
 namespace ShoppingListXA.Droid
@@ -14,15 +15,18 @@ namespace ShoppingListXA.Droid
     {
          SQLiteConnection database;
 
+        private List<ProductModel> products;
+
         public AppDatabase()
         {
-            string dbPath = "ShoppingListSQLite.db3";
-            string path = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+            const string dbPath = "ShoppingListSQLite.db3";
+            var path = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
             database = new SQLiteConnection(Path.Combine(path, dbPath));
             database.CreateTable<ProductModel>();
+            products = new List<ProductModel>();
         }
 
-        public int DeleteItem(IProductModel item)
+        public void DeleteItem(IProductModel item)
         {
             throw new NotImplementedException();
         }
@@ -34,13 +38,8 @@ namespace ShoppingListXA.Droid
 
         public List<IProductModel> GetItems()
         {
-            var products = database.Table<ProductModel>();
-            var list = new List<IProductModel>();
-            foreach(var product in products)
-            {
-                list.Add(product);
-            }
-            return list;
+            products = database.Table<ProductModel>().ToList();
+            return products.Cast<IProductModel>().ToList();
         }
 
         public List<IProductModel> GetItemsNotDone()
@@ -53,15 +52,27 @@ namespace ShoppingListXA.Droid
             
             if(item.ID != 0)
             {
-                var product = new ProductModel { ID = item.ID, Name = item.Name, IsChecked = item.IsChecked };
-                var dbProduct = database.Update(product);       
-                return dbProduct;
+                var product = products.FirstOrDefault(x => x.ID == item.ID);
+                product.IsChecked = item.IsChecked;
+
+                var result = database.Update(product);
+                if (result != 1)
+                {
+                    throw new SQLiteDatabaseLockedException();
+                }
+                return product.ID;
             }
             else
             {
                 var product = new ProductModel { Name = item.Name, IsChecked = item.IsChecked };
-                var dbProduct = database.Insert(product);
-                return dbProduct;
+                var result = database.Insert(product);
+                products.Add(product);
+                if (result != 1)
+                {
+                    throw new SQLiteDatabaseLockedException();
+                }
+
+                return product.ID;
             }
         }
     }

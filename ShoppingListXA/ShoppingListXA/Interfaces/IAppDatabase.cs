@@ -12,6 +12,6 @@ namespace ShoppingListXA.Interfaces
 
         int SaveItem(IProductModel item);
 
-        int DeleteItem(IProductModel item);
+        void DeleteItem(IProductModel item);
     }
 }
