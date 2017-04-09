@@ -33,7 +33,7 @@ namespace ShoppingListXA.ViewModels
                 if(ProductToAdd != null)
                 {
                     products.Add(ProductToAdd);
-                    App.Database.SaveItem(new ProductModel
+                   ProductToAdd.ID = App.Database.SaveItem(new ProductModel
                     {
                         ID = ProductToAdd.ID,
                         Name = ProductToAdd.Text,

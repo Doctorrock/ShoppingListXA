@@ -5,6 +5,7 @@ using ShoppingListXA.Interfaces;
 using System;
 using ShoppingListXA.Droid;
 using System.IO;
+using Android.Util;
 
 [assembly: Xamarin.Forms.Dependency(typeof(AppDatabase))]
 namespace ShoppingListXA.Droid
@@ -53,12 +54,14 @@ namespace ShoppingListXA.Droid
             if(item.ID != 0)
             {
                 var product = new ProductModel { ID = item.ID, Name = item.Name, IsChecked = item.IsChecked };
-                return database.Update(product);
+                var dbProduct = database.Update(product);       
+                return dbProduct;
             }
             else
             {
                 var product = new ProductModel { Name = item.Name, IsChecked = item.IsChecked };
-                return database.Insert(product);
+                var dbProduct = database.Insert(product);
+                return dbProduct;
             }
         }
     }

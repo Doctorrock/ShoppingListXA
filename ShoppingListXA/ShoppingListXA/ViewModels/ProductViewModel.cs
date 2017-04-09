@@ -10,9 +10,8 @@ namespace ShoppingListXA.ViewModels
         private DateTime dateAdded;
         private string text;
         private bool isChecked;
-        private int id;
 
-        public int ID => this.id;
+        public int ID { get; set; }
 
         public ProductViewModel()
         {
@@ -30,7 +29,7 @@ namespace ShoppingListXA.ViewModels
         }
         public ProductViewModel(int id):this()
         {
-            this.id = id;
+            this.ID = id;
         }
 
         public string Text
