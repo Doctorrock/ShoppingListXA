@@ -2,9 +2,9 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ShoppingListXA.AddPage">
-  <StackLayout>
-  <Entry Text="{Binding ProductToAdd.Text}" Placeholder="Nazwa produktu"/>
-  <Button Text="Zapisz" Command="{Binding SaveProduct}"/>
+  <StackLayout BackgroundColor="Gray">
+    <Entry Text="{Binding ProductToAdd.Text}" Placeholder="Nazwa produktu"/>
+    <Button Text="Zapisz" Command="{Binding SaveProduct}"/>
     <Button Text="Anuluj" Command="{Binding GetBack}"/>
   </StackLayout>
 </ContentPage>

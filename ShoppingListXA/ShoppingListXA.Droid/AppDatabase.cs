@@ -28,7 +28,11 @@ namespace ShoppingListXA.Droid
 
         public void DeleteItem(IProductModel item)
         {
-            throw new NotImplementedException();
+            var toRemove = products.FirstOrDefault(x => x.ID == item.ID);
+            if (toRemove == null) return;
+
+            products.Remove(toRemove);
+            database.Delete(toRemove);
         }
 
         public IProductModel GetItem(int id)

@@ -68,6 +68,14 @@ namespace ShoppingListXA.ViewModels
                 });
             }
         }
+
+        public void DeleteProduct(ProductViewModel product)
+        {
+            Products.Remove(product);
+
+            App.Database.DeleteItem(new ProductModel{ID = product.Id,IsChecked = product.IsChecked,Name = product.Text});
+        }
+
         public ProductViewModel ProductToAdd { get; set; }
         public ICommand AddProduct { protected set; get; }
         public ICommand AddPageCommand { protected set; get; }

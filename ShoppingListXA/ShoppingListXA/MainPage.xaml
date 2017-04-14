@@ -3,12 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:ShoppingListXA"
              x:Class="ShoppingListXA.MainPage">
-  <StackLayout>
-  <ListView x:Name="listView">
+  <StackLayout BackgroundColor="Gray">
+    <ListView x:Name="listView" >
     <ListView.ItemTemplate>
       <DataTemplate>
         <ViewCell>
-          <StackLayout BackgroundColor="#eee"
+            <ViewCell.ContextActions>
+                            <MenuItem Clicked="OnDelete" CommandParameter="{Binding .}"
+               Text="Usuń" IsDestructive="True" />
+                        </ViewCell.ContextActions>
+          <StackLayout BackgroundColor="Gray"
                         Orientation="Horizontal" HorizontalOptions="StartAndExpand">
             <Button Text="{Binding Text}"  Command="{Binding CheckProduct}"  HorizontalOptions="StartAndExpand"/>
             <Image Source="check.png" HorizontalOptions="End" IsVisible ="{Binding IsChecked}"/>   
